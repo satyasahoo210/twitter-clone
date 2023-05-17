@@ -15,15 +15,46 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <Head>
+        {/* HTML Meta Tags */}
         <title>Twitter</title>
         <meta name="description" content="Twitter Clone App by @satya210" />
+
+        {/* Facebook Meta Tags */}
+        <meta
+          property="og:url"
+          content="https://twitter-clone-satyasahoo210.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Twitter" />
+        <meta
+          property="og:description"
+          content="Twitter Clone App by @satya210"
+        />
         <meta
           property="og:image"
           content="https://twitter-clone-satyasahoo210.vercel.app/logo.png"
         />
-        <meta property="og:image:width" content="512" />
 
-        <meta property="og:image:height" content="512" />
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="twitter-clone-satyasahoo210.vercel.app"
+        />
+        <meta
+          property="twitter:url"
+          content="https://twitter-clone-satyasahoo210.vercel.app/"
+        />
+        <meta name="twitter:title" content="Twitter" />
+        <meta
+          name="twitter:description"
+          content="Twitter Clone App by @satya210"
+        />
+        <meta
+          name="twitter:image"
+          content="https://twitter-clone-satyasahoo210.vercel.app/logo.png"
+        />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto flex items-start sm:pr-4">
