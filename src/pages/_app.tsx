@@ -15,11 +15,18 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <Head>
-        <title>Twitter Clone</title>
-        <meta name="description" content="Twitter Clone" />
+        <title>Twitter</title>
+        <meta name="description" content="Twitter Clone App by @satya210" />
+        <meta
+          property="og:image"
+          content="https://twitter-clone-satyasahoo210.vercel.app/logo.png"
+        />
+        <meta property="og:image:width" content="512" />
+
+        <meta property="og:image:height" content="512" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container flex mx-auto items-start sm:pr-4">
+      <div className="container mx-auto flex items-start sm:pr-4">
         <SideNav />
         <div className="min-h-screen flex-grow border-x">
           <Component {...pageProps} />
